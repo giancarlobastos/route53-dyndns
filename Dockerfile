@@ -1,10 +1,6 @@
-FROM alpine:latest
+FROM python:2
 
-RUN apk add --update \
-        python \
-        py-pip \
-    && rm -rf /var/cache/apk/* \
-    && pip install \
+RUN pip install \
         boto \
         dnspython
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-TAG=1.2.0
-IMAGE=bradqwood/route53-dyndns
+TAG=1.2.1
+IMAGE=giancarlobastos/route53-dyndns
 
 docker build -t $IMAGE:$TAG .
 docker tag $IMAGE:$TAG $IMAGE:latest
